@@ -9,7 +9,9 @@ export function Home() {
       <Header />
 
       <Content>
-        <Button />
+        <Button title='Lâmpadas' iconName='lightbulb-outline' />
+
+        <Button title='Fechaduras' iconName='lock-outline' />
       </Content>
     </HomeContainer>
   );

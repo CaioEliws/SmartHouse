@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const ButtonContainer = styled.View`
+export const ButtonContainer = styled.TouchableOpacity`
     width: 100%;
     height: 56px;
 
@@ -8,11 +8,14 @@ export const ButtonContainer = styled.View`
     justify-content: space-around;
     flex-direction: row;
 
-    background-color: yellow;
+    border-radius: 8px;
+
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
 `;
 
 export const TextButton = styled.Text`
     color: ${({ theme }) => theme.COLORS.BLACK};
 
-    font-size: ${({ theme }) => theme.FONT_FAMILY.LG}
+    font-size: 20px;
+    font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
 `;

@@ -12,10 +12,4 @@ export const defaultTheme = {
         REGULAR: 'ROBOTO_400Regular',
         BOLD: 'Roboto_700Bold',
     },
-    FONT_SIZE: {
-        SM: 14,
-        MD: 16,
-        LG: 18,
-        XL: 24,
-    }
 } as const
