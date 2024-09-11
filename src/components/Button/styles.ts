@@ -17,5 +17,4 @@ export const TextButton = styled.Text`
     color: ${({ theme }) => theme.COLORS.BLACK};
 
     font-size: 20px;
-    font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
 `;

@@ -8,8 +8,8 @@ export const defaultTheme = {
 
         GRAY_100: '#ebebeb',
     },
-    FONT_FAMILY: {
-        REGULAR: 'ROBOTO_400Regular',
-        BOLD: 'Roboto_700Bold',
-    },
+    // FONT_FAMILY: {
+    //     REGULAR: 'ROBOTO_400Regular',
+    //     BOLD: 'Roboto_700Bold',
+    // },
 } as const
