@@ -2,8 +2,6 @@ import { ButtonContainer, TextButton } from "./styles";
 
 import { MaterialIcons, AntDesign } from '@expo/vector-icons';
 
-
-
 interface ButtonProps {
     title: string
     iconName?: keyof typeof MaterialIcons.glyphMap
