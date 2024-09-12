@@ -5,11 +5,12 @@ import { MaterialIcons, AntDesign } from '@expo/vector-icons';
 interface ButtonProps {
     title: string
     iconName?: keyof typeof MaterialIcons.glyphMap
+    onPress?: () => void;
 }
 
-export function Button({ title, iconName }: ButtonProps) {
+export function Button({ title, iconName, onPress }: ButtonProps) {
     return (
-        <ButtonContainer>
+        <ButtonContainer onPress={onPress}>
             {
                 iconName && (
                     <MaterialIcons name={iconName} size={20} color="#e36343" />

@@ -6,7 +6,7 @@ export function Lock() {
 
     return (
         <LockContainer>
-            <Header />
+            <Header hasButton="yes" />
 
             <TitleText>Fechaduras:</TitleText>
 

@@ -17,9 +17,14 @@ export const TextSwitch = styled.Text`
     color: ${({ theme }) => theme.COLORS.BLACK};;
 `;
 
-export const Switch = styled.Switch`
-    width: 50px;
+export const SwitchView = styled.View`
+    width: 52px;
     height: 32px;
-    border-radius: 100px;
     justify-content: center;
+
+    border-radius: 20px;
+`;
+
+export const Switch = styled.Switch`
+
 `;
