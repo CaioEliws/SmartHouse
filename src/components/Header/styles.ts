@@ -6,4 +6,10 @@ export const HeaderContainer = styled.View`
 
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+`;
+
+export const SvgView = styled.View`
+    position: absolute;
+    left: 30px;
 `;

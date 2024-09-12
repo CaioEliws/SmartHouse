@@ -6,7 +6,7 @@ export function Lamp() {
 
     return (
         <LampContainer>
-            <Header />
+            <Header hasButton="yes" />
 
             <TitleText>Luzes:</TitleText>
 

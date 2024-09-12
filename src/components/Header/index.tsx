@@ -1,10 +1,28 @@
-import { Image } from "react-native";
+import { Image, TouchableOpacity } from "react-native";
+import { HeaderContainer, SvgView } from "./styles";
+import { AntDesign } from '@expo/vector-icons';
 
-import { HeaderContainer } from "./styles";
+import { useNavigation } from '@react-navigation/native';
 
-export function Header() {
+interface HeaderProps {
+    hasButton?: "yes"
+}
+
+export function Header({ hasButton }: HeaderProps) {
+    const navigation = useNavigation();
+
     return (
         <HeaderContainer>
+            {
+                hasButton === "yes" && (
+                    <SvgView>
+                        <TouchableOpacity onPress={() => navigation.goBack()}>
+                            <AntDesign name="left" size={24} />
+                        </TouchableOpacity>
+                    </SvgView>
+                )
+            }
+
             <Image source={require("@assets/logo.png")} />
         </HeaderContainer>
     )
