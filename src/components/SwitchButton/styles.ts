@@ -24,7 +24,3 @@ export const SwitchView = styled.View`
 
     border-radius: 20px;
 `;
-
-export const Switch = styled.Switch`
-
-`;

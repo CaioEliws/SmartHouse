@@ -1,4 +1,5 @@
-import { SwitchContainer, TextSwitch, Switch, SwitchView } from "./styles";
+import { SwitchContainer, TextSwitch, SwitchView } from "./styles";
+import { Switch } from "react-native";
 
 import React from "react";
 import { useState } from "react";

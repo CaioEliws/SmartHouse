@@ -1,4 +1,4 @@
-import { ButtonContainer, TextButton } from "./styles";
+import { ButtonContainer, TextButton, ViewHomeSvg } from "./styles";
 
 import { MaterialIcons, AntDesign } from '@expo/vector-icons';
 
@@ -21,7 +21,9 @@ export function Button({ title, iconName, onPress }: ButtonProps) {
                 { title }
             </TextButton>
 
-            <AntDesign name="right" size={20} />
+            <ViewHomeSvg>
+                <AntDesign name="right" size={20} />
+            </ViewHomeSvg>
         </ButtonContainer>
     )
 }

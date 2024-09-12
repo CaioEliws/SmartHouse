@@ -1,20 +1,25 @@
 import styled from "styled-components/native";
 
 export const ButtonContainer = styled.TouchableOpacity`
-    width: 100%;
+    background: ${({ theme }) => theme.COLORS.WHITE};
     height: 56px;
 
-    align-items: center;
-    justify-content: space-around;
+    border-radius: 12px;
+
     flex-direction: row;
+    align-items: center;
 
-    border-radius: 8px;
-
-    background-color: ${({ theme }) => theme.COLORS.WHITE};
+    padding-left: 20px;
+    gap: 14px;
 `;
 
 export const TextButton = styled.Text`
     color: ${({ theme }) => theme.COLORS.BLACK};
 
     font-size: 20px;
+`;
+
+export const ViewHomeSvg = styled.View`
+    position: absolute;
+    right: 20px;
 `;
